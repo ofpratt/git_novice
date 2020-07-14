@@ -1,6 +1,12 @@
 view: inventory_items {
   sql_table_name: demo_db.inventory_items ;;
 
+dimension: id_test {
+  type: number
+  sql: ${id} + 225 ;;
+}
+
+
   dimension: id {
     primary_key: yes
     type: number
